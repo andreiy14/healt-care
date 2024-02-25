@@ -1,3 +1,6 @@
+# Project Description
+This project is a React web application that utilizes Tailwind CSS, Ant Design (antd), and Firebase Firestore. The web app is optimized for viewing on mobile screens.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
