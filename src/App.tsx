@@ -1,17 +1,15 @@
 import "./App.css";
-import { Navbar, FormPatient, HistorySubmit } from "./components";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { AddForm, DetailPatient } from "./pages";
 
 function App() {
   return (
-    <div className="relative min-h-screen">
-      <main>
-        <Navbar />
-        <div className="flex items-start justify-start md:flex md:mt-10 w-full md:justify-between">
-          <HistorySubmit />
-          <FormPatient />
-        </div>
-      </main>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<AddForm />} />
+        <Route path="/detail-patient/:patientId" element={<DetailPatient />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
